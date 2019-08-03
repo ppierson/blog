@@ -16,7 +16,7 @@
 title: Patrick Pierson
 email: patrick.d.pierson@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  My portfolio
+  I am an iOS Software Engineer. Welcome to my portfolio.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
