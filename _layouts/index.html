@@ -1,0 +1,64 @@
+---
+layout: default
+---
+
+<div class="content">
+  <!-- {% include pagination-newer.html %} -->
+
+  {{ content }}
+
+  <h1>Professional Work</h1>
+  {% assign sorted_work = site.professional-work | sort: 'date' | reverse %}
+  {% for work in sorted_work %}
+
+  <article class="post-body">
+    <h2>
+      <a href="{{ work.url | relative_url }}">
+        {{ work.name }}
+      </a>
+    </h2>
+
+    {% include project-meta.html project=work %}
+
+    {% if work.excerpt %}
+      {{ work.excerpt }}
+    {% else %}
+      {{ work.content }}
+    {% endif %}
+
+  </article>
+  {% endfor %}
+
+  <!-- {% for post in paginator.posts %}
+  <article class="post-body">
+    <h2 class="post-title">
+      <a href="{{ post.url | relative_url }}">
+        {{ post.title }}
+      </a>
+    </h2>
+    {% include post-meta.html post=post %}
+
+    {% if post.excerpt %}
+      {{ post.excerpt }}
+    {% else %}
+      {{ post.content }}
+    {% endif %}
+
+    {% if post.excerpt %}
+      {% comment %}Excerpt may be equal to content. Check.{% endcomment %}
+      {% capture content_words %}
+        {{ post.content | number_of_words }}
+      {% endcapture %}
+      {% capture excerpt_words %}
+        {{ post.excerpt | number_of_words }}
+      {% endcapture %}
+
+      {% if content_words != excerpt_words %}
+        <a href="{{ post.url | relative_url }}">More &hellip;</a>
+      {% endif %}
+    {% endif %}
+  </article>
+  {% endfor %}
+
+  {% include pagination-older.html %} -->
+</div>

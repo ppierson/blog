@@ -26,9 +26,16 @@ github_username:  jekyll
 markdown: kramdown
 theme: jekyll-theme-hydeout
 remote_theme: fongandrew/hydeout
-paginate: 5
+# paginate: 5
 plugins:
   - jekyll-feed
+
+collections_dir: collections
+collections:
+  - professional-work
+
+# Uncomment the following to display paginated posts on index.html
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
