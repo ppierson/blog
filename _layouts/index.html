@@ -8,14 +8,18 @@ layout: default
   {{ content }}
 
   <h1>Professional Work</h1>
-  {% assign sorted_work = site.professional-work | sort: 'date' | reverse %}
+  {% assign sorted_work = site.professional-work | sort: 'start_date' | reverse %}
   {% for work in sorted_work %}
 
   <article class="post-body">
     <h2>
-      <a href="{{ work.url | relative_url }}">
+      {% if work.website != null %}
+      <a href="{{ work.website | relative_url }}" target="newwindow">
         {{ work.name }}
       </a>
+      {% else %}
+      {{ work.name }}
+      {% endif %}
     </h2>
 
     {% include project-meta.html project=work %}

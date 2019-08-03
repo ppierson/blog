@@ -1,3 +1,20 @@
 <div class="post-meta">
-  <small>Platforms: {{ include.project.platforms }}</small>
+  <small>Platforms: {{ include.project.platforms }}</small></br>
+  <small>
+    {{ include.project.start_date | date: "%B %Y" }}
+    {% if include.project.end_date != null %}
+      - {{ include.project.end_date | date: "%B %Y" }}
+    {% else %}
+      - Present
+    {% endif %}
+  </small>
+  </br>
+  <small>
+    {% for link in include.project.links %}
+    {% if forloop.first != true %}
+    <span>&bull;</span>
+    {% endif %}
+    <a href="{{link.url}}" target="newwindow">{{ link.name }}</a>
+    {% endfor %}
+  </small>
 </div>
