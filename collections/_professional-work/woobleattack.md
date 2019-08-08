@@ -5,6 +5,7 @@ excerpt_separator: <!--excerpt-->
 start_date: 2012-01-01 00:00:00 -0400
 end_date: 2012-07-01 00:00:00 -0400
 website: https://www.localwisdom.com/labs/woobleattack-mobile-app/
+useWebsiteURL: true
 ---
 
 Wooble Attack is a family friendly game created for casual mobile gamers of all ages. It features two game modes, standard and survival. Standard mode is great for any casual player as well as for young children. Survival, on the other hand, introduces longer play, greater difficulty, and introduces penalties for mistakes. Survival mode is great for those who like a challenge.

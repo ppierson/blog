@@ -6,6 +6,7 @@ date: 2011-01-03 00:00:00 -0400
 website: https://www.localwisdom.com/labs/weatherwise-mobile-app/
 start_date: 2011-01-01 00:00:00 -0400
 end_date: 2014-05-19 00:00:00 -0400
+useWebsiteURL: true
 ---
 
 Weatherwise is a unique weather app for iOS and Android focused on creative imagery rather than pure data. It replaces large areas of text and boring generic weather icons found in most weather applications with stylized weather scenes with a parallax effect triggered by the accelerometer of the device.

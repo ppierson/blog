@@ -8,6 +8,7 @@ website: https://getlua.com/
 links:
   - name: iOS App Store
     url: https://apps.apple.com/us/app/lua-secure-mobile-messaging/id519581506
+useWebsiteURL: true
 ---
 
 A simple to use, HIPAA compliant mobile messaging platform.

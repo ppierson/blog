@@ -31,7 +31,24 @@ plugins:
 
 collections_dir: collections
 collections:
-  - professional-work
+  professional-work:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "professional-work"
+    values:
+      layout: "project"
+  # - scope:
+  #     path: ""
+  #     type: "posts"
+  #   values:
+  #     layout: "post"
+  # - scope:
+  #     path: ""
+  #   values:
+  #     layout: "default"
 
 # Uncomment the following to display paginated posts on index.html
 # paginate: 5

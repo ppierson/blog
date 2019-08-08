@@ -13,12 +13,18 @@ layout: default
 
   <article class="post-body">
     <h2>
-      {% if work.website != null %}
-      <a href="{{ work.website | relative_url }}" target="newwindow">
+      {% if work.useWebsiteURL == true %}
+        {% if work.website != nil %}
+        <a href="{{ work.website | relative_url }}" target="newwindow">
+          {{ work.name }}
+        </a>
+        {% else %}
+        {{ work.name }}
+        {% endif %}
+      {% else %}
+      <a href="{{ work.url | relative_url }}" target="newwindow">
         {{ work.name }}
       </a>
-      {% else %}
-      {{ work.name }}
       {% endif %}
     </h2>
 
